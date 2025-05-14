@@ -7,7 +7,7 @@ import edu.estatuas.kataromannumerals.RomanNumber;
 import org.junit.jupiter.api.Tag;
 
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.CsvSource;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

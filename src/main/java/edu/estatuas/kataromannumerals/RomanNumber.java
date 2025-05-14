@@ -4,9 +4,14 @@ public class RomanNumber {
 
     String romanAnnotation;
 
-    Integer decimalAnnotation;
+    Short decimalAnnotation;
 
     public RomanNumber(String romanAnnotation) {
         this.romanAnnotation = romanAnnotation;
+    }
+
+    public Short toDecimal() {
+
+        return Short.valueOf("0");
     }
 }
