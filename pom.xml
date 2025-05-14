@@ -67,7 +67,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>edu.estatuas.kataromannumerals.RomanNumber</mainClass>
+              <mainClass>edu.estatuas.kataromannumerals.RomansGoHome</mainClass>
             </manifest>
             <manifestEntries>
               <url>${project.url}</url>
