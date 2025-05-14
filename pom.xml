@@ -25,6 +25,12 @@
       <version>5.9.3</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>5.9.0</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
@@ -60,7 +66,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>edu.estatuas.App</mainClass>
+              <mainClass>edu.estatuas.kataromannumerals.RomanNumber</mainClass>
             </manifest>
             <manifestEntries>
               <url>${project.url}</url>
@@ -107,6 +113,19 @@
       <plugin>
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>3.0.0</version>
+      </plugin>
+
+      <!-- plugin para controlar la actualizacion de las versiones -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>versions-maven-plugin</artifactId>
+        <version>2.10.0</version>
+        <configuration>
+          <allowIncrementalUpdates>true</allowIncrementalUpdates>
+          <allowMinorUpdates>true</allowMinorUpdates>
+          <allowMajorUpdates>false</allowMajorUpdates>
+          <allowSnapshots>false</allowSnapshots>
+        </configuration>
       </plugin>
     </plugins>
   </build>
