@@ -24,7 +24,7 @@ public class NumeroRomanoTest {
             "1000,  M",
             "2000,  UMMU",
             "3000,  UMMMU",
-            "4000,  UMMMMU"
+            "3300,  UMMMUCCCU"
     })
     void grupo_M_test(String decimal, String roman) {
 
