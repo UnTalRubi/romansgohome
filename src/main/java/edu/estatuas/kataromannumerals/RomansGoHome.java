@@ -8,10 +8,10 @@ public class RomansGoHome {
         List.of("MMM", // 3000
                 "MM", // 2000
                 "M", // 1000
-                "MMMDCCCLXXXVIII", // 3888
-                "MMDCCLXXVII", // 2777
-                "CDXLIV", // 444
-                "CDXXXIX" // 439
+                "MMM D CCC L XXX V III", // 3888
+                "MM D CC L XX V II", // 2777
+                "CD X L IV", // 444
+                "CD XXX IX" // 439
         ).stream()
                 .map(RomanNumber::new)
                 .forEach(n -> System.out.println(n.toString() + " = " + n.toDecimal()));

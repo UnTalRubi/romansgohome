@@ -18,19 +18,13 @@ public class NumeroRomanoTest {
     /**
      * Grupos sumatorios M, C, X, I
      */
-
-    @Test
-    public void testBasicM() {
-        RomanNumber numeroRomano = new RomanNumber("MM");
-        assertEquals("2000", numeroRomano.toDecimal().toString());
-    }
-
     @Tag("sumatorio")
     @ParameterizedTest
     @CsvSource({
             "1000,  M",
             "2000,  UMMU",
-            "3000,  UMMMU"
+            "3000,  UMMMU",
+            "4000,  UMMMMU"
     })
     void grupo_M_test(String decimal, String roman) {
 
